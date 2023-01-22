@@ -1,0 +1,215 @@
+---
+import "@fontsource/public-sans/variable.css";
+import Card from "../components/Card.astro";
+import CardStack from "../components/CardStack.astro";
+import Section from "../components/Section.astro";
+import Body from "../components/typography/Body.astro";
+import BodyBold from "../components/typography/BodyBold.astro";
+import DisplayBig from "../components/typography/DisplayBig.astro";
+import DisplaySmall from "../components/typography/DisplaySmall.astro";
+import Heading1 from "../components/typography/Heading1.astro";
+import Heading2 from "../components/typography/Heading2.astro";
+import Heading3 from "../components/typography/Heading3.astro";
+import Lead from "../components/typography/Lead.astro";
+import LeadBold from "../components/typography/LeadBold.astro";
+import Small from "../components/typography/Small.astro";
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/core-concepts/astro-components/
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>manueljlin</title>
+  </head>
+
+  <div class="text-dark-cloud bg-light-sky">
+    <div
+      class="text-dark-moon bg-light-cloud px-12 py-16 md:px-32 md:py-24 xl:px-48 xl:py-32"
+    >
+      <div class="flex flex-col md:max-w-4xl gap-6">
+        <DisplayBig title="Hola, soy Manuel Jesús." />
+        <DisplaySmall
+          title="Me encanta el software libre, el diseño y aprender mientras ayudo."
+        />
+        <Lead
+          title="Soy una persona curiosa, idealista, perfeccionista e introspectiva. Siempre me ha gustado la informática, y ahora aún más que he tenido la suerte de entender una pequeña parte de esta /magia/, tanto desde la parte de es[tech] como la de KDE."
+        />
+      </div>
+    </div>
+    <div
+      class="grid lg:grid-cols-2 xl:grid-cols-3 gap-12 p-12 md:px-32 xl:px-48"
+    >
+      <Section>
+        <Heading1 title="Competencias" />
+        <CardStack>
+          <Card>
+            <Heading3 title="Android" />
+            <Body>
+              Kotlin, Layouts en XML, Coroutines, patrones MVVM, uso de REST
+              APIs, SQL con Room, Google Maps, integraciones con Firebase
+              (Notificaciones, Firestore, etc)
+            </Body>
+          </Card>
+          <Card>
+            <Heading3 title="iOS" />
+            <Body>
+              Swift, interfaz usando UIKit + Storyboards, patrones MVC,
+              CocoaPods, MapKit y dentro de poco SwiftUI.
+            </Body>
+          </Card>
+          <Card>
+            <Heading3 title="Back-end" />
+            <Body>
+              Diseño de bases de datos relacionales. SQL queries para
+              MySQL/MariaDB.
+            </Body>
+            <Body>Bases de detos no relacionales: Firebase Firestore</Body>
+            <Body>PHP 7, Laravel 8 (MVC, Routing, ORM, Composer),</Body>
+          </Card>
+          <Card>
+            <Heading3 title="Front-end" />
+            <Body>
+              HTML5, CSS3 Responsive, JS + DOM, Vue, Astro, Tailwind CSS,
+              Bootstrap
+            </Body>
+          </Card>
+          <Card>
+            <Heading3 title="Editores de texto e IDEs" />
+            <Body>Experiencia con VSCode, VS, Xcode, Emacs y Vim/Neovim</Body>
+          </Card>
+          <Card>
+            <Heading3 title="Diseño" />
+            <Body>
+              +3 años de experiencia con Figma, Inkscape, Creative Cloud y
+              optimización de SVGs. Experiencia trabajando en equipos globales
+              de +30 personas.
+            </Body>
+          </Card>
+          <Card>
+            <Heading3 title="VCS, CI/CD y bug triaging/reporting" />
+            <Body>
+              Experiencia con Git y Mercurial, GitLab, GitHub y Phabricator
+            </Body>
+            <Body>Familiarizado con Bugzilla.</Body>
+          </Card>
+          <Card>
+            <Heading3 title="Idiomas" />
+            <Body>
+              Inglés a nivel medio/alto (alrededor de un B2/C1), aunque todavía
+              no he tenido tiempo para sacarme un título oficial.
+            </Body>
+          </Card>
+        </CardStack>
+      </Section>
+
+      <Section>
+        <Heading1 title="Experiencia" />
+        <Card>
+          <Heading3 title="BlueSystems" />
+          <Small>Diseñador gráfico</Small>
+          <Body>
+            En estos últimos años, he ayudado a rediseñar la interfaz para KDE
+            Plasma 5, un entorno de escritorio de software libre basado en
+            Qt/QML/C++ para móviles, ordenadores y smart TVs, algunas
+            aplicaciones y el estilo de las aplicaciones (Breeze/Ocean).
+          </Body>
+          <Body>
+            Nuestro esfuerzo ha merecido la pena: está detrás del modo
+            escritorio de la consola Steam Deck, con más de un millón de
+            usuarios actuales.
+          </Body>
+          <div class="flex flex-col gap-4 pt-4">
+            <LeadBold title="Algunas cosas en las que he trabajado" />
+            <div>
+              <BodyBold>Mockups</BodyBold>
+              <Body>
+                Muchísimos mockups para Kickoff (menú de inicio), Ocean,
+                Discover, KDE Connect, Krita...
+              </Body>
+            </div>
+            <div>
+              <BodyBold>Kits de diseño</BodyBold>
+              <Body>Para Figma y Penpot</Body>
+            </div>
+            <div>
+              <BodyBold>Carteles</BodyBold>
+              <Body>conf.kde.in, a principios de 2020</Body>
+            </div>
+            <div>
+              <BodyBold>Logos</BodyBold>
+              <Body>
+                DebConf 2023 (la conferencia anual de Debian, patrocinada por
+                Google, Canonical, Lenovo, Microsoft, Arm, etc), Plasma Nano,
+                kdesrc-buid y KSokoban.
+              </Body>
+            </div>
+            <div>
+              <BodyBold>Packaging</BodyBold>
+              <Body>PinePhone Beta Edition</Body>
+            </div>
+            <div>
+              <BodyBold>Teclados</BodyBold>
+              <Body>
+                Diseño de las teclas/keycaps del KDE Slimbook, una serie de
+                portátiles de una empresa valenciana.
+              </Body>
+            </div>
+          </div>
+        </Card>
+      </Section>
+
+      <Section>
+        <Heading1 title="Educación" />
+        <CardStack>
+          <Card>
+            <Heading3 title="Desarrollo de Aplicaciones Multiplataforma" />
+            <Body>Grado Superior</Body>
+            <Small>@ es[tech] — Sept. 2021 a Sept. 2023</Small>
+          </Card>
+          <Card>
+            <Heading3 title="Bachillerato de Artes" />
+            <Small>@ IES Huarte — Sept. 2018 a Sept. 2020</Small>
+          </Card>
+        </CardStack>
+      </Section>
+
+      <Section>
+        <Heading1 title="Hobbies" />
+        <CardStack>
+          <Card>
+            <Heading3 title="Teclados" />
+            <Body>
+              ¿Teclados? Sí, teclados: Layouts, QMK, switches mecánicos etc
+            </Body>
+            <Body>
+              Puede que lo siguiente suene a ruido, pero... uso un Iris rev.6
+              (como un Ergodox más chiquitito) con Gazzew Boba U4 y MT3
+              Susuwatari. Del lado del software, uso una configuración QMK con
+              Canary Ortho, aunque antes usaba Colemak-DH con Seniply.
+            </Body>
+          </Card>
+          <Card>
+            <Heading3 title="Emacs" />
+            <Body>
+              No es rápido, tampoco es precisamente agradable a la vista (de
+              primeras), y los atajos de teclado te harán pensarte dos veces lo
+              que estás haciendo con tu vida. Pero, al ser básicamente un
+              entorno REPL de Elisp con un editor pegado con fiso a la espalda,
+              empiezas a pulir las imperfecciones reescribiéndolo cachito a
+              cachito con tu propia configuración y al final es como ropa hecha
+              a medida, piensa como tú. O un poco más lento.
+            </Body>
+          </Card>
+        </CardStack>
+      </Section>
+      <!-- TODO: add more stuff -->
+    </div>
+  </div>
+
+
+</html>
